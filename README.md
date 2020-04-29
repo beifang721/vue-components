@@ -4,7 +4,7 @@
 
 ## Tabs
 
-![](./README_IMAGE/tabs.png)
+![tabs](https://i.loli.net/2020/04/29/vxWE8pLOKGJg3Af.png)
 
 ```javascript
 <template>
