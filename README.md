@@ -34,3 +34,42 @@ export default {
 };
 </script>
 ```
+
+## Pagination
+
+![pagination](https://i.loli.net/2020/05/09/Ot1E9ISZxiNeqUv.png)
+
+```javascript
+<template>
+  <div>
+    <sf-pagination
+      :default-current="defaultCurrent"
+      :default-page-size="defaultPageSize"
+      :total="total"
+      @change="onChange"
+    ></sf-pagination>
+  </div>
+</template>
+
+<script>
+import SfPagination from '../components/pagination/index.vue';
+
+export default {
+  data() {
+    return {
+      defaultCurrent: 1,
+      defaultPageSize: 3,
+      total: 30,
+    };
+  },
+  components: {
+    SfPagination,
+  },
+  methods: {
+    onChange(current) {
+      console.log(current);
+    },
+  },
+};
+</script>
+```
