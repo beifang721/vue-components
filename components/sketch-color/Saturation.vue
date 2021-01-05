@@ -97,7 +97,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .sf-saturation,
 .sf-saturation--white,
 .sf-saturation--black {

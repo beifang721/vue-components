@@ -139,7 +139,7 @@ export default {
 };
 </script>
 
-<style lang="less" scoped>
+<style scoped>
 .tabs-wrap {
   overflow: hidden;
   position: relative;
@@ -147,35 +147,35 @@ export default {
   border-top: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   padding: 5px;
-  .tabs-scroll {
-    overflow: hidden;
-    .tabs-list {
-      box-sizing: border-box;
-      white-space: nowrap;
-      position: relative;
-      transition: transform 0.3s;
-      float: left;
-      z-index: 2;
-    }
-    .prev {
-      position: absolute;
-      left: 0;
-      top: 10px;
-      &:hover {
-        color: #23a8f2;
-        cursor: pointer;
-      }
-    }
-    .next {
-      position: absolute;
-      right: 0;
-      top: 10px;
-      &:hover {
-        color: #23a8f2;
-        cursor: pointer;
-      }
-    }
-  }
+}
+.tabs-wrap .tabs-scroll {
+  overflow: hidden;
+}
+.tabs-wrap .tabs-scroll .tabs-list {
+  box-sizing: border-box;
+  white-space: nowrap;
+  position: relative;
+  transition: transform 0.3s;
+  float: left;
+  z-index: 2;
+}
+.tabs-wrap .tabs-scroll .prev {
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
+.tabs-wrap .tabs-scroll .prev:hover {
+  color: #23a8f2;
+  cursor: pointer;
+}
+.tabs-wrap .tabs-scroll .next {
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+.tabs-wrap .tabs-scroll .next:hover {
+  color: #23a8f2;
+  cursor: pointer;
 }
 .is-scrollable {
   padding: 5px 20px;

@@ -1,0 +1,27 @@
+{
+  "name": "vue-components",
+  "version": "1.0.0",
+  "description": "> C&amp;V TO USE🕹",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/didadi599/vue-components.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/didadi599/vue-components/issues"
+  },
+  "homepage": "https://github.com/didadi599/vue-components#readme",
+  "devDependencies": {
+    "vuepress": "^1.8.0",
+    "vuepress-plugin-demo-container": "^0.2.0"
+  }
+}

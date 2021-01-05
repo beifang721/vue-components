@@ -104,14 +104,17 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .sf-editable-input {
   position: relative;
 }
 .sf-input__input {
-  padding: 0;
-  border: 0;
   outline: none;
+  width: 90%;
+  padding: 4px 0 3px 10%;
+  border: none;
+  box-shadow: inset 0 0 0 1px #ccc;
+  font-size: 10px;
 }
 .sf-input__label {
   text-transform: capitalize;

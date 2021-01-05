@@ -83,7 +83,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .sf-checkerboard {
   position: absolute;
   top: 0px;

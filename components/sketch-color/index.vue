@@ -285,7 +285,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .sf-sketch {
   position: relative;
   width: 200px;

@@ -81,7 +81,7 @@ export default {
 };
 </script>
 
-<style lang="less" scoped>
+<style scoped>
 @import "./icon/iconfont.css";
 
 .tabs-item {
@@ -99,42 +99,42 @@ export default {
   transition: 0.5s all;
   border: 1px solid #dddddd;
   cursor: pointer;
-  &:hover {
-    background: #ffffff;
-  }
-  &:first-child {
-    margin-left: 0;
-  }
-  &.active-item {
-    background: #ffffff;
-  }
-  .icon-wrap {
-    position: absolute;
-    top: -1px;
-    right: 2px;
-    width: 14px;
-    height: 14px;
-    .icon {
-      z-index: 99;
-      font-size: 8px;
-      position: relative;
-      &:hover {
-        color: #23a8f2;
-      }
-    }
-  }
-  .mark {
-    position: absolute;
-    background: #eeeeee;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    transform: translateX(-120%);
-    top: 9px;
-    transition: 0.75s all;
-  }
-  .active {
-    background: #23a8f2;
-  }
+}
+.tabs-item:hover {
+  background: #ffffff;
+}
+.tabs-item:first-child {
+  margin-left: 0;
+}
+.tabs-item.active-item {
+  background: #ffffff;
+}
+.tabs-item .icon-wrap {
+  position: absolute;
+  top: -1px;
+  right: 2px;
+  width: 14px;
+  height: 14px;
+}
+.tabs-item .icon-wrap .icon {
+  z-index: 99;
+  font-size: 8px;
+  position: relative;
+}
+.tabs-item .icon-wrap .icon:hover {
+  color: #23a8f2;
+}
+.tabs-item .mark {
+  position: absolute;
+  background: #eeeeee;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  transform: translateX(-120%);
+  top: 9px;
+  transition: 0.75s all;
+}
+.tabs-item .active {
+  background: #23a8f2;
 }
 </style>

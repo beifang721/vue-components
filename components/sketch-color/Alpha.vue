@@ -93,7 +93,7 @@ export default {
 
 </script>
 
-<style>
+<style scoped>
 .sf-alpha {
   position: absolute;
   top: 0px;
