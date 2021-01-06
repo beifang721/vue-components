@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1 class="title">Vue 组件整合</h1>
-    <p class="desc">整合了一些 vue2.0 的组件，每个组件各自独立，可单独获取进行学习与二次开发</p>
+    <p class="desc">整合了一些 vue2.0 的组件，每个组件各自独立，可单独获取进行使用与二次开发</p>
     <div class="logo-box">
       <h1 class="logo">< <span class="blink">_</span> /></h1>
     </div>
@@ -9,7 +9,7 @@
       <div class="card">
         <img src="https://element.eleme.cn/2.14/static/guide.0a8462c.png" />
         <h3>指南</h3>
-        <p>了解使用指南，快速 CV 组件进行开发与二次开发。</p>
+        <p>了解使用指南，快速 CV 组件进行使用与二次开发。</p>
         <router-link tag="a" to="/guide/">查看详情</router-link>
       </div>
       <div class="card">

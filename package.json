@@ -22,5 +22,6 @@
   "homepage": "https://github.com/didadi599/vue-components#readme",
   "devDependencies": {
     "vuepress": "^1.8.0"
-  }
+  },
+  "dependencies": {}
 }
