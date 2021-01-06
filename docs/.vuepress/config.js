@@ -8,13 +8,11 @@ module.exports = {
     // 作为特例，默认语言可以使用 '/' 作为其路径。
     '/': {
       lang: 'zh-CN',
-      title: 'VuePress',
-      description: 'Vue 驱动的静态网站生成器'
+      title: 'Vue 组件整合',
     },
     '/en/': {
-      lang: 'en-US', // 将会被设置为 <html> 的 lang 属性
-      title: 'VuePress',
-      description: 'Vue-powered Static Site Generator'
+      lang: 'en-US',
+      title: 'Vue Components',
     }
   },
   themeConfig: {
@@ -23,20 +21,32 @@ module.exports = {
       // 作为特例，默认语言可以使用 '/' 作为其路径。
       '/': {
         lang: 'zh-CN',
-        title: 'VuePress',
         selectText: '选择语言',
         label: '简体中文',
-        editLinkText: '在 GitHub 上编辑此页',
-        description: 'Vue 驱动的静态网站生成器',
+        description: 'Vue 组件',
         nav: [
-          { text: '指南', link: '/', ariaLabel: '指南' },
+          { text: '指南', link: '/guide/', ariaLabel: '指南' },
           { text: '组件', link: '/component/', ariaLabel: '组件' },
         ],
         sidebar: {
           '/component/': [
-            'quickstart',
-            'tabs',
-          ],
+            {
+              title: '开发指南',   // 必要的
+              collapsable: false, // 可选的, 默认值是 true,
+              sidebarDepth: 1,    // 可选的, 默认值是 1
+              children: [
+                'quickstart',
+              ]
+            },
+            {
+              title: '组件',   // 必要的
+              collapsable: false, // 可选的, 默认值是 true,
+              sidebarDepth: 1,    // 可选的, 默认值是 1
+              children: [
+                'tabs',
+              ]
+            },
+          ]
         },
         "demo-block": {
           "hide-text": "隐藏代码",
@@ -46,13 +56,12 @@ module.exports = {
         },
       },
       '/en/': {
-        lang: 'en-US', // 将会被设置为 <html> 的 lang 属性
-        title: 'VuePress',
+        lang: 'en-US',
         selectText: 'Languages',
         label: 'English',
-        description: 'Vue-powered Static Site Generator',
+        description: 'vue componets',
         nav: [
-          { text: 'Guide', link: '/en/', ariaLabel: 'Guide' },
+          { text: 'Guide', link: '/en/guide/', ariaLabel: 'Guide' },
           { text: 'Component', link: '/en/component/quickstart', ariaLabel: 'Component' },
         ],
         sidebar: {

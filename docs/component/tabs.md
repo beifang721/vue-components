@@ -1,5 +1,6 @@
 # Tabs 标签页
 
+## tab
 :::demo tabs 此处放置代码示例的描述信息，支持 `Markdown` 语法，**描述信息只支持单行**
 ```vue
 <template>
@@ -24,6 +25,8 @@ export default {
 ```
 :::
 
+## sketch-color
+
 :::demo tabs 此处放置代码示例的描述信息，支持 `Markdown` 语法，**描述信息只支持单行**
 ```vue
 <template>
@@ -36,6 +39,38 @@ export default {
     return {
       color: '#fff',
     };
+  },
+};
+</script>
+```
+:::
+
+:::demo tabs 此处放置代码示例的描述信息，支持 `Markdown` 语法，**描述信息只支持单行**
+```vue
+<template>
+  <div>
+    <pagination
+      :default-current="defaultCurrent"
+      :default-page-size="defaultPageSize"
+      :total="total"
+      @change="onChange"
+    ></pagination>
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      defaultCurrent: 1,
+      defaultPageSize: 3,
+      total: 30,
+    };
+  },
+  methods: {
+    onChange(current) {
+      console.log(current);
+    },
   },
 };
 </script>
