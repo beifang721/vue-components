@@ -48,7 +48,7 @@ export default {
 :::demo tabs 此处放置代码示例的描述信息，支持 `Markdown` 语法，**描述信息只支持单行**
 ```vue
 <template>
-  <div>
+  <div style="width: 430px;">
     <pagination
       :default-current="defaultCurrent"
       :default-page-size="defaultPageSize"

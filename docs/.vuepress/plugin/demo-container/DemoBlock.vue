@@ -190,6 +190,7 @@ export default {
 }
 .demo-block .demo-content {
   padding: 24px;
+  overflow-x: auto;
 }
 .demo-block .meta {
   background-color: #282c34;
