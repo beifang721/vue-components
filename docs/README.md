@@ -16,7 +16,7 @@
         <img src="https://element.eleme.cn/2.14/static/component.bd3411b.png" />
         <h3>组件</h3>
         <p>使用组件 Demo 快速体验交互细节。</p>
-        <router-link tag="a" to="/component/tabs">查看详情</router-link>
+        <router-link tag="a" to="/component/icon">查看详情</router-link>
       </div>
     </div>
   </div>

@@ -16,7 +16,7 @@
         <img src="https://element.eleme.cn/2.14/static/component.bd3411b.png" />
         <h3>Component</h3>
         <p>Use component Demo to quickly experience the details of the interaction.</p>
-        <router-link tag="a" to="/en/component/tabs">Detail</router-link>
+        <router-link tag="a" to="/en/component/icon">Detail</router-link>
       </div>
     </div>
   </div>
