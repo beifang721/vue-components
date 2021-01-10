@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1 class="title">Vue 组件整合</h1>
-    <p class="desc">整合了一些 vue2.0 的组件，每个组件各自独立，可单独获取进行使用与二次开发</p>
+    <h1 class="title">🐒没什么用的 vue 组件</h1>
+    <p class="desc">一些我自己对 vue2.0 组件封装的一些理解</p>
     <div class="logo-box">
       <h1 class="logo">< <span class="blink">_</span> /></h1>
     </div>
@@ -9,13 +9,13 @@
       <div class="card">
         <img src="https://element.eleme.cn/2.14/static/guide.0a8462c.png" />
         <h3>指南</h3>
-        <p>了解使用指南，快速 CV 组件进行使用与二次开发。</p>
+        <p>如何查看和获取相关组件。</p>
         <router-link tag="a" to="/guide/">查看详情</router-link>
       </div>
       <div class="card">
         <img src="https://element.eleme.cn/2.14/static/component.bd3411b.png" />
         <h3>组件</h3>
-        <p>使用组件 Demo 快速体验交互细节；一键复制例子代码。</p>
+        <p>使用组件 Demo 快速体验交互细节。</p>
         <router-link tag="a" to="/component/tabs">查看详情</router-link>
       </div>
     </div>
@@ -57,7 +57,7 @@ export default {
 
 .logo {
   color: #b9b9b9;
-  font-size: 7em;
+  font-size: 6em;
   line-height: 0.8;
   margin: 1rem 0;
 }

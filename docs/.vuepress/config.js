@@ -2,17 +2,17 @@ const DemoContainer = require('./plugin/demo-container/index.js');
 
 module.exports = {
   base: '/vue-components/',
-  plugins: [DemoContainer],
+  plugins: [DemoContainer, '@vuepress/medium-zoom'],
   locales: {
     // 键名是该语言所属的子路径
     // 作为特例，默认语言可以使用 '/' 作为其路径。
     '/': {
       lang: 'zh-CN',
-      title: 'Vue 组件整合',
+      title: '🐒没什么用的 vue 组件',
     },
     '/en/': {
       lang: 'en-US',
-      title: 'Vue Components',
+      title: '🐒Useless Vue Vomponents',
     }
   },
   themeConfig: {
@@ -41,9 +41,9 @@ module.exports = {
             {
               title: '组件',   // 必要的
               collapsable: false, // 可选的, 默认值是 true,
-              sidebarDepth: 1,    // 可选的, 默认值是 1
+              sidebarDepth: 2,    // 可选的, 默认值是 1
               children: [
-                'tabs',
+                'icon',
               ]
             },
           ]

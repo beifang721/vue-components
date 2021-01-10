@@ -21,7 +21,10 @@
   },
   "homepage": "https://github.com/didadi599/vue-components#readme",
   "devDependencies": {
+    "@vuepress/plugin-medium-zoom": "^1.8.0",
     "vuepress": "^1.8.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "iview": "^3.5.4"
+  }
 }

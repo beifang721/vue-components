@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1 class="title">Vue Components</h1>
-    <p class="desc">A number of vue 2.0 components are integrated, each individually accessed for learning and secondary development</p>
+    <h1 class="title">🐒Useless Vue Vomponents</h1>
+    <p class="desc">Some of my own understanding of the vue 2.0 component package</p>
     <div class="logo-box">
       <h1 class="logo">< <span class="blink">_</span> /></h1>
     </div>
@@ -9,7 +9,7 @@
       <div class="card">
         <img src="https://element.eleme.cn/2.14/static/guide.0a8462c.png" />
         <h3>Guide</h3>
-        <p>Learn how to use the guide to quickly replicate components for development and secondary development.</p>
+        <p>How to view and get related components.</p>
         <router-link tag="a" to="/en/guide/">Detail</router-link>
       </div>
       <div class="card">
@@ -57,7 +57,7 @@ export default {
 
 .logo {
   color: #b9b9b9;
-  font-size: 7em;
+  font-size: 6em;
   line-height: 0.8;
   margin: 1rem 0;
 }
