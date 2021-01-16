@@ -44,6 +44,7 @@ module.exports = {
               sidebarDepth: 2,    // 可选的, 默认值是 1
               children: [
                 'icon',
+                'tabs',
               ]
             },
           ]
@@ -62,11 +63,27 @@ module.exports = {
         description: 'vue componets',
         nav: [
           { text: 'Guide', link: '/en/guide/', ariaLabel: 'Guide' },
-          { text: 'Component', link: '/en/component/quickstart', ariaLabel: 'Component' },
+          { text: 'Component', link: '/en/component/icon', ariaLabel: 'Component' },
         ],
         sidebar: {
           '/en/component/': [
-            'quickstart',
+            {
+              title: 'Guid',
+              collapsable: false,
+              sidebarDepth: 1,
+              children: [
+                'quickstart',
+              ]
+            },
+            {
+              title: 'Components',
+              collapsable: false,
+              sidebarDepth: 2,
+              children: [
+                'icon',
+                'tabs',
+              ]
+            },
           ],
         },
         "demo-block": {

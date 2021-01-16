@@ -21,7 +21,11 @@ export default {
       default: 'top'
     },
     beforeLeave: Function,
-    stretch: Boolean
+    stretch: Boolean,
+    showContent: {
+      type: Boolean,
+      default: true,
+    },
   },
 
   provide() {
@@ -121,7 +125,8 @@ export default {
       editable,
       addable,
       tabPosition,
-      stretch
+      stretch,
+      showContent
     } = this;
 
     const newButton = editable || addable
@@ -145,18 +150,23 @@ export default {
         editable,
         type,
         panes,
-        stretch
+        stretch,
+        showContent
       },
       ref: 'nav'
     };
     const header = (
-      <div class={['v-tabs__header', `is-${tabPosition}`]}>
+      <div class={['v-tabs__header', `is-${tabPosition}`]} style={showContent ? '' : 'margin: 0;'}>
         {newButton}
         <tab-nav { ...navData }></tab-nav>
       </div>
     );
-    const panels = (
+    const panels = showContent ? (
       <div class="v-tabs__content">
+        {this.$slots.default}
+      </div>
+    ) : (
+      <div style="display: none;">
         {this.$slots.default}
       </div>
     );
@@ -166,7 +176,7 @@ export default {
         'v-tabs': true,
         'v-tabs--card': type === 'card',
         [`v-tabs--${tabPosition}`]: true,
-        'v-tabs--border-card': type === 'border-card'
+        'v-tabs--border-card': type === 'border-card',
       }}>
         { tabPosition !== 'bottom' ? [header, panels] : [panels, header] }
       </div>
