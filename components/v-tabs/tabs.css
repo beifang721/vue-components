@@ -255,6 +255,10 @@
   margin: 0
 }
 
+.v-tabs--border-card>.v-tabs__header .v-tabs__new-tab {
+  margin: 5px 0 5px 5px
+}
+
 .v-tabs--border-card>.v-tabs__header .v-tabs__item {
   -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
   transition        : all .3s cubic-bezier(.645, .045, .355, 1);
@@ -285,6 +289,11 @@
 
 .v-tabs--border-card>.v-tabs__header .is-scrollable .v-tabs__item:first-child {
   margin-left: 0
+}
+
+.v-tabs--border-card>.v-tabs__header .is-scrollable .v-tabs__nav-next,
+.v-tabs--border-card>.v-tabs__header .is-scrollable .v-tabs__nav-prev {
+  line-height: 30px;
 }
 
 .v-tabs--bottom .v-tabs__item.is-bottom:nth-child(2),
