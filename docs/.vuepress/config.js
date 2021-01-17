@@ -45,6 +45,7 @@ module.exports = {
               children: [
                 'icon',
                 'tabs',
+                'calendar',
               ]
             },
           ]
@@ -82,6 +83,7 @@ module.exports = {
               children: [
                 'icon',
                 'tabs',
+                'calendar',
               ]
             },
           ],
