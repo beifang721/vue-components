@@ -125,7 +125,7 @@ export default {
       events: [
         {
           title: '08:08 干饭',
-          start: Date.now(),
+          start: this.formatDate(new Date()),
         },
       ],
       eventRender: function(info) {
@@ -136,6 +136,20 @@ export default {
         info.el.appendChild(italicEl);
       },
     };
+  },
+  methods: {
+    formatDate(date) {
+      let year = date.getFullYear();
+      let month = date.getMonth() + 1;
+      if (month < 10) {
+        month = '0' + month;
+      }
+      let day = date.getDate();
+      if (day < 10) {
+        day = '0' + day;
+      }
+      return year + '-' + month + '-' + day;
+    },
   },
 }
 </script>

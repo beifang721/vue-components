@@ -26,7 +26,6 @@ export default {
       locale,
       plugins: [ dayGridPlugin, interactionPlugin ],
     });
-    console.log(this.currentOptions);
     const calendarEl = this.$refs.calendar;
     this.calendar = new Calendar(calendarEl, this.currentOptions);
     this.calendar.render();
