@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1 class="title">🐒Useless Vue Vomponents</h1>
-    <p class="desc">Some of my own understanding of the vue 2.0 component package</p>
+    <h1 class="title">Useless Vue Vomponents</h1>
+    <p class="desc">How to change a component to fit your own use</p>
     <div class="logo-box">
       <h1 class="logo">< <span class="blink">_</span> /></h1>
     </div>

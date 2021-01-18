@@ -8,11 +8,11 @@ module.exports = {
     // 作为特例，默认语言可以使用 '/' 作为其路径。
     '/': {
       lang: 'zh-CN',
-      title: '🐒没什么用的 vue 组件',
+      title: '没什么用的 vue 组件',
     },
     '/en/': {
       lang: 'en-US',
-      title: '🐒Useless Vue Vomponents',
+      title: 'Useless Vue Vomponents',
     }
   },
   themeConfig: {

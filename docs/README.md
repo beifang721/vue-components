@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1 class="title">🐒没什么用的 vue 组件</h1>
-    <p class="desc">一些我自己对 vue2.0 组件封装的一些理解</p>
+    <h1 class="title">没什么用的 vue 组件</h1>
+    <p class="desc">如何将一个组件改成适合自己用的组件？</p>
     <div class="logo-box">
       <h1 class="logo">< <span class="blink">_</span> /></h1>
     </div>
