@@ -5,7 +5,7 @@
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
   </a>
   <a href="#" target="_blank">
-    <img alt="License: MIT" src="https://img.shields.io/github/license/didadi599/Vue Components" />
+    <img alt="License: MIT" src="https://github.com/saltedfish964/vue-components/blob/master/LICENSE" />
   </a>
 </p>
 
