@@ -9,7 +9,7 @@
   </a>
 </p>
 
-> > C&amp;V TO USE🕹
+> C&amp;V TO USE🕹
 
 ### 🏠 [Homepage](https://salted-fish.top/vue-components/)
 
