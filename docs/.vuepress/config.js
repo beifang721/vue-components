@@ -46,6 +46,7 @@ module.exports = {
                 'icon',
                 'tabs',
                 'calendar',
+                'scroll',
               ]
             },
           ]
@@ -84,6 +85,7 @@ module.exports = {
                 'icon',
                 'tabs',
                 'calendar',
+                'scroll',
               ]
             },
           ],
