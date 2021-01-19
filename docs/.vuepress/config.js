@@ -4,8 +4,6 @@ module.exports = {
   base: '/vue-components/',
   plugins: [DemoContainer, '@vuepress/medium-zoom'],
   locales: {
-    // 键名是该语言所属的子路径
-    // 作为特例，默认语言可以使用 '/' 作为其路径。
     '/': {
       lang: 'zh-CN',
       title: '没什么用的 vue 组件',
@@ -17,8 +15,6 @@ module.exports = {
   },
   themeConfig: {
     locales: {
-      // 键名是该语言所属的子路径
-      // 作为特例，默认语言可以使用 '/' 作为其路径。
       '/': {
         lang: 'zh-CN',
         selectText: '选择语言',
@@ -31,22 +27,23 @@ module.exports = {
         sidebar: {
           '/component/': [
             {
-              title: '开发指南',   // 必要的
-              collapsable: false, // 可选的, 默认值是 true,
-              sidebarDepth: 1,    // 可选的, 默认值是 1
+              title: '开发指南',
+              collapsable: false,
+              sidebarDepth: 1,
               children: [
                 'quickstart',
               ]
             },
             {
-              title: '组件',   // 必要的
-              collapsable: false, // 可选的, 默认值是 true,
-              sidebarDepth: 2,    // 可选的, 默认值是 1
+              title: '组件',
+              collapsable: false,
+              sidebarDepth: 2,
               children: [
                 'icon',
                 'tabs',
                 'calendar',
                 'scroll',
+                'time',
               ]
             },
           ]
@@ -86,6 +83,7 @@ module.exports = {
                 'tabs',
                 'calendar',
                 'scroll',
+                'time',
               ]
             },
           ],

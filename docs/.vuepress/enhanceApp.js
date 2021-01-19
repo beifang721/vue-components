@@ -4,12 +4,15 @@ import VIcon from '../../components/v-icon/icon.vue';
 import VTabs from '../../components/v-tabs/tabs.vue';
 import VTabPane from '../../components/v-tabs/tab-pane.vue';
 
+import VTime from '../../components/v-time/time.vue';
+
 export default ({
   Vue,
 }) => {
   Vue.component('v-icon', VIcon);
   Vue.component('v-tabs', VTabs);
   Vue.component('v-tab-pane', VTabPane);
+  Vue.component('v-time', VTime);
 
   // 解决打包时不能使用浏览器内置对象问题
   Vue.mixin({
