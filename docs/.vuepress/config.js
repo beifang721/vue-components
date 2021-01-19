@@ -44,6 +44,7 @@ module.exports = {
                 'calendar',
                 'scroll',
                 'time',
+                'animated-number',
               ]
             },
           ]
@@ -84,6 +85,7 @@ module.exports = {
                 'calendar',
                 'scroll',
                 'time',
+                'animated-number',
               ]
             },
           ],
