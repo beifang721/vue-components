@@ -22,7 +22,7 @@ export default ({
 
   // 解决打包时不能使用浏览器内置对象问题
   Vue.mixin({
-    mounted() {
+    created() {
       import('../../components/v-scroll/main').then((m) => {
         Vue.component('v-scroll', m.default);
       });

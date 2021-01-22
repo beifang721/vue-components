@@ -94,6 +94,7 @@ export default {
     this.options = {
       // 点击日期事件
       dateClick: function(info) {
+        // this.select(info);
         alert('点击了 ' + info.dateStr);
       },
     };
