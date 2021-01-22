@@ -8,6 +8,8 @@ import VTime from '../../components/v-time/time.vue';
 
 import VAnimatedNumber from '../../components/v-animated-number/index.vue';
 
+import VColor from '../../components/v-color/index.vue';
+
 export default ({
   Vue,
 }) => {
@@ -16,6 +18,7 @@ export default ({
   Vue.component('v-tab-pane', VTabPane);
   Vue.component('v-time', VTime);
   Vue.component('v-animated-number', VAnimatedNumber);
+  Vue.component('v-color', VColor);
 
   // 解决打包时不能使用浏览器内置对象问题
   Vue.mixin({

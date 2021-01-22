@@ -1,7 +1,7 @@
 <template>
-  <div :class="['sf-hue', directionClass]">
+  <div :class="['v-hue', directionClass]">
     <div
-      class="sf-hue-container"
+      class="v-hue-container"
       role="slider"
       :aria-valuenow="colors.hsl.h"
       aria-valuemin="0"
@@ -12,11 +12,11 @@
       @touchstart="handleChange"
     >
       <div
-        class="sf-hue-pointer"
+        class="v-hue-pointer"
         :style="{top: pointerTop, left: pointerLeft}"
         role="presentation"
       >
-        <div class="sf-hue-picker"></div>
+        <div class="v-hue-picker"></div>
       </div>
     </div>
   </div>
@@ -51,8 +51,8 @@ export default {
     },
     directionClass() {
       return {
-        'sf-hue--horizontal': this.direction === 'horizontal',
-        'sf-hue--vertical': this.direction === 'vertical',
+        'v-hue--horizontal': this.direction === 'horizontal',
+        'v-hue--vertical': this.direction === 'vertical',
       };
     },
     pointerTop() {
@@ -145,7 +145,7 @@ export default {
 </script>
 
 <style scoped>
-.sf-hue {
+.v-hue {
   position: absolute;
   top: 0px;
   right: 0px;
@@ -153,7 +153,7 @@ export default {
   left: 0px;
   border-radius: 2px;
 }
-.sf-hue--horizontal {
+.v-hue--horizontal {
   background: linear-gradient(
     to right,
     #f00 0%,
@@ -165,7 +165,7 @@ export default {
     #f00 100%
   );
 }
-.sf-hue--vertical {
+.v-hue--vertical {
   background: linear-gradient(
     to top,
     #f00 0%,
@@ -177,17 +177,17 @@ export default {
     #f00 100%
   );
 }
-.sf-hue-container {
+.v-hue-container {
   cursor: pointer;
   margin: 0 2px;
   position: relative;
   height: 100%;
 }
-.sf-hue-pointer {
+.v-hue-pointer {
   z-index: 2;
   position: absolute;
 }
-.sf-hue-picker {
+.v-hue-picker {
   cursor: pointer;
   margin-top: 1px;
   width: 4px;

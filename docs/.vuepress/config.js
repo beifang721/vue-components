@@ -45,6 +45,7 @@ module.exports = {
                 'scroll',
                 'time',
                 'animated-number',
+                'color',
               ]
             },
           ]
@@ -86,6 +87,7 @@ module.exports = {
                 'scroll',
                 'time',
                 'animated-number',
+                'color',
               ]
             },
           ],

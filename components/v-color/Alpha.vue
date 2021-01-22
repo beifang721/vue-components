@@ -1,24 +1,24 @@
 <template>
-  <div class="sf-alpha">
-    <div class="sf-alpha-checkboard-wrap">
+  <div class="v-alpha">
+    <div class="v-alpha-checkboard-wrap">
       <checkboard></checkboard>
     </div>
     <div
-      class="sf-alpha-gradient"
+      class="v-alpha-gradient"
       :style="{background: gradientColor}"
     ></div>
     <div
-      class="sf-alpha-container"
+      class="v-alpha-container"
       ref="container"
       @mousedown="handleMouseDown"
       @touchmove="handleChange"
       @touchstart="handleChange"
     >
       <div
-        class="sf-alpha-pointer"
+        class="v-alpha-pointer"
         :style="{left: colors.a * 100 + '%'}"
       >
-        <div class="sf-alpha-picker"></div>
+        <div class="v-alpha-picker"></div>
       </div>
     </div>
   </div>
@@ -94,14 +94,14 @@ export default {
 </script>
 
 <style scoped>
-.sf-alpha {
+.v-alpha {
   position: absolute;
   top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
 }
-.sf-alpha-checkboard-wrap {
+.v-alpha-checkboard-wrap {
   position: absolute;
   top: 0px;
   right: 0px;
@@ -109,25 +109,25 @@ export default {
   left: 0px;
   overflow: hidden;
 }
-.sf-alpha-gradient {
+.v-alpha-gradient {
   position: absolute;
   top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
 }
-.sf-alpha-container {
+.v-alpha-container {
   cursor: pointer;
   position: relative;
   z-index: 2;
   height: 100%;
   margin: 0 3px;
 }
-.sf-alpha-pointer {
+.v-alpha-pointer {
   z-index: 2;
   position: absolute;
 }
-.sf-alpha-picker {
+.v-alpha-picker {
   cursor: pointer;
   width: 4px;
   border-radius: 1px;

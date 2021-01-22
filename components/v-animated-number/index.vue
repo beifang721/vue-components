@@ -15,6 +15,10 @@ export default {
       type: Number,
       default: 0,
     },
+    continued: {
+      type: Number,
+      default: 500,
+    },
   },
   data() {
     return {
@@ -39,7 +43,7 @@ export default {
 
       const obj = { tweeningValue: startValue };
       new TWEEN.Tween(obj)
-        .to({ tweeningValue: endValue }, 500)
+        .to({ tweeningValue: endValue }, this.continued)
         .onUpdate(() => {
           this.tweeningValue = obj.tweeningValue.toFixed(this.toFixed);
         })

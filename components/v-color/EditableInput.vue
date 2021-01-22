@@ -1,8 +1,8 @@
 <template>
-  <div class="sf-editable-input">
+  <div class="v-editable-input">
     <input
       :aria-labelledby="labelId"
-      class="sf-input__input"
+      class="v-input__input"
       v-model="val"
       @keydown="handleKeyDown"
       @input="update"
@@ -10,10 +10,10 @@
     >
     <span
       :for="label"
-      class="sf-input__label"
+      class="v-input__label"
       :id="labelId"
     >{{labelSpanText}}</span>
-    <span class="sf-input__desc">{{desc}}</span>
+    <span class="v-input__desc">{{desc}}</span>
   </div>
 </template>
 
@@ -105,10 +105,10 @@ export default {
 </script>
 
 <style scoped>
-.sf-editable-input {
+.v-editable-input {
   position: relative;
 }
-.sf-input__input {
+.v-input__input {
   outline: none;
   width: 90%;
   padding: 4px 0 3px 10%;
@@ -116,7 +116,7 @@ export default {
   box-shadow: inset 0 0 0 1px #ccc;
   font-size: 10px;
 }
-.sf-input__label {
+.v-input__label {
   text-transform: capitalize;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="sf-checkerboard"
+    class="v-checkerboard"
     :style="bgStyle"
   ></div>
 </template>
@@ -84,7 +84,7 @@ export default {
 </script>
 
 <style scoped>
-.sf-checkerboard {
+.v-checkerboard {
   position: absolute;
   top: 0px;
   right: 0px;

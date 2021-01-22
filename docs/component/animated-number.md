@@ -49,3 +49,28 @@ export default {
 </script>
 ```
 :::
+
+## 过渡持续时间
+
+`continued` 属性设置数字过渡时长，单位：毫秒，默认 `500` 毫秒。
+
+:::demo
+```vue
+<template>
+  <div>
+    <input v-model.number="number" type="number" />
+    <br />
+    <v-animated-number :value="number" :continued="6000"></v-animated-number>
+  </div>
+</template>
+<script>
+export default {
+  data () {
+    return {
+      number: 666,
+    }
+  }
+}
+</script>
+```
+:::

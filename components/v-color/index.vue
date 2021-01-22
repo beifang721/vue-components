@@ -2,24 +2,24 @@
   <div
     role="application"
     aria-label="Sketch color picker"
-    :class="['sf-sketch', disableAlpha ? 'sf-sketch__disable-alpha' : '']"
+    :class="['v-sketch', disableAlpha ? 'v-sketch__disable-alpha' : '']"
   >
-    <div class="sf-sketch-saturation-wrap">
+    <div class="v-sketch-saturation-wrap">
       <saturation
         v-model="colors"
         @change="childChange"
       ></saturation>
     </div>
-    <div class="sf-sketch-controls">
-      <div class="sf-sketch-sliders">
-        <div class="sf-sketch-hue-wrap">
+    <div class="v-sketch-controls">
+      <div class="v-sketch-sliders">
+        <div class="v-sketch-hue-wrap">
           <hue
             v-model="colors"
             @change="childChange"
           ></hue>
         </div>
         <div
-          class="sf-sketch-alpha-wrap"
+          class="v-sketch-alpha-wrap"
           v-if="!disableAlpha"
         >
           <alpha
@@ -28,42 +28,42 @@
           ></alpha>
         </div>
       </div>
-      <div class="sf-sketch-color-wrap">
+      <div class="v-sketch-color-wrap">
         <div
           :aria-label="`Current color is ${activeColor}`"
-          class="sf-sketch-active-color"
+          class="v-sketch-active-color"
           :style="{background: activeColor}"
         ></div>
         <checkboard></checkboard>
       </div>
     </div>
     <div
-      class="sf-sketch-field"
+      class="v-sketch-field"
       v-if="!disableFields"
     >
       <!-- rgba -->
-      <div class="sf-sketch-field--double">
+      <div class="v-sketch-field--double">
         <ed-in
           label="hex"
           :value="hex"
           @change="inputChange"
         ></ed-in>
       </div>
-      <div class="sf-sketch-field--single">
+      <div class="v-sketch-field--single">
         <ed-in
           label="r"
           :value="colors.rgba.r"
           @change="inputChange"
         ></ed-in>
       </div>
-      <div class="sf-sketch-field--single">
+      <div class="v-sketch-field--single">
         <ed-in
           label="g"
           :value="colors.rgba.g"
           @change="inputChange"
         ></ed-in>
       </div>
-      <div class="sf-sketch-field--single">
+      <div class="v-sketch-field--single">
         <ed-in
           label="b"
           :value="colors.rgba.b"
@@ -71,7 +71,7 @@
         ></ed-in>
       </div>
       <div
-        class="sf-sketch-field--single"
+        class="v-sketch-field--single"
         v-if="!disableAlpha"
       >
         <ed-in
@@ -84,14 +84,14 @@
       </div>
     </div>
     <div
-      class="sf-sketch-presets"
+      class="v-sketch-presets"
       role="group"
       aria-label="A color preset, pick one to set as current color"
     >
       <template v-for="c in presetColors">
         <div
           v-if="!isTransparent(c)"
-          class="sf-sketch-presets-color"
+          class="v-sketch-presets-color"
           :aria-label="'Color:' + c"
           :key="c"
           :style="{background: c}"
@@ -102,7 +102,7 @@
           v-else
           :key="c"
           :aria-label="'Color:' + c"
-          class="sf-sketch-presets-color"
+          class="v-sketch-presets-color"
           @click="handlePreset(c)"
         >
           <checkboard />
@@ -286,7 +286,7 @@ export default {
 </script>
 
 <style scoped>
-.sf-sketch {
+.v-sketch {
   position: relative;
   width: 200px;
   padding: 10px 10px 0;
@@ -296,40 +296,40 @@ export default {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
-.sf-sketch-saturation-wrap {
+.v-sketch-saturation-wrap {
   width: 100%;
   padding-bottom: 75%;
   position: relative;
   overflow: hidden;
 }
 
-.sf-sketch-controls {
+.v-sketch-controls {
   display: flex;
 }
 
-.sf-sketch-sliders {
+.v-sketch-sliders {
   padding: 4px 0;
   flex: 1;
 }
 
-.sf-sketch-sliders .sf-hue,
-.sf-sketch-sliders .sf-alpha-gradient {
+.v-sketch-sliders .v-hue,
+.v-sketch-sliders .v-alpha-gradient {
   border-radius: 2px;
 }
 
-.sf-sketch-hue-wrap {
+.v-sketch-hue-wrap {
   position: relative;
   height: 10px;
 }
 
-.sf-sketch-alpha-wrap {
+.v-sketch-alpha-wrap {
   position: relative;
   height: 10px;
   margin-top: 4px;
   overflow: hidden;
 }
 
-.sf-sketch-color-wrap {
+.v-sketch-color-wrap {
   width: 24px;
   height: 24px;
   position: relative;
@@ -338,7 +338,7 @@ export default {
   border-radius: 3px;
 }
 
-.sf-sketch-active-color {
+.v-sketch-active-color {
   position: absolute;
   top: 0;
   left: 0;
@@ -350,16 +350,16 @@ export default {
   z-index: 2;
 }
 
-.sf-sketch-color-wrap .sf-checkerboard {
+.v-sketch-color-wrap .v-checkerboard {
   background-size: auto;
 }
 
-.sf-sketch-field {
+.v-sketch-field {
   display: flex;
   padding-top: 4px;
 }
 
-.sf-sketch-field .sf-input__input {
+.v-sketch-field .v-input__input {
   width: 90%;
   padding: 4px 0 3px 10%;
   border: none;
@@ -367,7 +367,7 @@ export default {
   font-size: 10px;
 }
 
-.sf-sketch-field .sf-input__label {
+.v-sketch-field .v-input__label {
   display: block;
   text-align: center;
   font-size: 11px;
@@ -377,16 +377,16 @@ export default {
   text-transform: capitalize;
 }
 
-.sf-sketch-field--single {
+.v-sketch-field--single {
   flex: 1;
   padding-left: 6px;
 }
 
-.sf-sketch-field--double {
+.v-sketch-field--double {
   flex: 2;
 }
 
-.sf-sketch-presets {
+.v-sketch-presets {
   margin-right: -10px;
   margin-left: -10px;
   padding-left: 10px;
@@ -394,7 +394,7 @@ export default {
   border-top: 1px solid #eee;
 }
 
-.sf-sketch-presets-color {
+.v-sketch-presets-color {
   border-radius: 3px;
   overflow: hidden;
   position: relative;
@@ -407,12 +407,12 @@ export default {
   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15);
 }
 
-.sf-sketch-presets-color .sf-checkerboard {
+.v-sketch-presets-color .v-checkerboard {
   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15);
   border-radius: 3px;
 }
 
-.sf-sketch__disable-alpha .sf-sketch-color-wrap {
+.v-sketch__disable-alpha .v-sketch-color-wrap {
   height: 10px;
 }
 </style>

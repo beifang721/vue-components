@@ -1,19 +1,19 @@
 <template>
   <div
-    class="sf-saturation"
+    class="v-saturation"
     :style="{background: bgColor}"
     ref="container"
     @mousedown="handleMouseDown"
     @touchmove="handleChange"
     @touchstart="handleChange"
   >
-    <div class="sf-saturation--white"></div>
-    <div class="sf-saturation--black"></div>
+    <div class="v-saturation--white"></div>
+    <div class="v-saturation--black"></div>
     <div
-      class="sf-saturation-pointer"
+      class="v-saturation-pointer"
       :style="{top: pointerTop, left: pointerLeft}"
     >
-      <div class="sf-saturation-circle"></div>
+      <div class="v-saturation-circle"></div>
     </div>
   </div>
 </template>
@@ -98,9 +98,9 @@ export default {
 </script>
 
 <style scoped>
-.sf-saturation,
-.sf-saturation--white,
-.sf-saturation--black {
+.v-saturation,
+.v-saturation--white,
+.v-saturation--black {
   cursor: pointer;
   position: absolute;
   top: 0;
@@ -109,17 +109,17 @@ export default {
   bottom: 0;
 }
 
-.sf-saturation--white {
+.v-saturation--white {
   background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
 }
-.sf-saturation--black {
+.v-saturation--black {
   background: linear-gradient(to top, #000, rgba(0, 0, 0, 0));
 }
-.sf-saturation-pointer {
+.v-saturation-pointer {
   cursor: pointer;
   position: absolute;
 }
-.sf-saturation-circle {
+.v-saturation-circle {
   cursor: head;
   width: 4px;
   height: 4px;
