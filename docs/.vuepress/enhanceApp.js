@@ -12,6 +12,7 @@ import VColor from '../../components/v-color/index.vue';
 
 export default ({
   Vue,
+  isServer,
 }) => {
   Vue.component('v-icon', VIcon);
   Vue.component('v-tabs', VTabs);
@@ -21,15 +22,12 @@ export default ({
   Vue.component('v-color', VColor);
 
   // 解决打包时不能使用浏览器内置对象问题
-  import('../../components/v-calendar/calendar.vue').then((m) => {
-    Vue.component('v-calendar', m.default);
-  });
-  Vue.mixin({
-    mounted() {
-      import('../../components/v-scroll/main').then((m) => {
-        Vue.component('v-scroll', m.default);
-      });
-    },
-  })
-
+  if (!isServer) {
+    import('../../components/v-calendar/calendar.vue').then((m) => {
+      Vue.component('v-calendar', m.default);
+    });
+    import('../../components/v-scroll/main').then((m) => {
+      Vue.component('v-scroll', m.default);
+    });
+  }
 }
