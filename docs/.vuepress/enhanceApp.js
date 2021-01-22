@@ -21,13 +21,13 @@ export default ({
   Vue.component('v-color', VColor);
 
   // 解决打包时不能使用浏览器内置对象问题
+  import('../../components/v-calendar/calendar.vue').then((m) => {
+    Vue.component('v-calendar', m.default);
+  });
   Vue.mixin({
-    created() {
+    mounted() {
       import('../../components/v-scroll/main').then((m) => {
         Vue.component('v-scroll', m.default);
-      });
-      import('../../components/v-calendar/calendar.vue').then((m) => {
-        Vue.component('v-calendar', m.default);
       });
     },
   })
