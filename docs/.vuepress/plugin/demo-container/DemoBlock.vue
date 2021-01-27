@@ -19,7 +19,9 @@
         <slot name="description"></slot>
       </div>
       <div class="code-content">
-        <slot name="source"></slot>
+        <ClientOnly>
+          <slot name="source"></slot>
+        </ClientOnly>
       </div>
     </div>
     <div

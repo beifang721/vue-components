@@ -1,8 +1,23 @@
+const path = require('path');
 const DemoContainer = require('./plugin/demo-container/index.js');
 
 module.exports = {
   base: '/vue-components/',
-  plugins: [DemoContainer, '@vuepress/medium-zoom'],
+  plugins: [
+    DemoContainer,
+    '@vuepress/medium-zoom',
+    [
+      '@vuepress/plugin-register-components',
+      {
+        components: [
+          {
+            name: 'v-calendar',
+            path: path.join(__dirname, '../../components/v-calendar/calendar.vue'),
+          }
+        ]
+      },
+    ],
+  ],
   locales: {
     '/': {
       lang: 'zh-CN',

@@ -1,5 +1,7 @@
 # Calendar 日历
 
+<ClientOnly>
+
 适合开发交互类型日历。
 
 ## 基本
@@ -11,6 +13,7 @@
 </template>
 ```
 :::
+
 
 ## 自定义工具栏
 
@@ -156,6 +159,7 @@ export default {
 </script>
 ```
 :::
+</ClientOnly>
 
 <style>
 .fc-toolbar h2 {
